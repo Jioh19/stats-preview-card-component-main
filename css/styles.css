@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
+
+/*
+1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+/*
+2. Remove default margin
+*/
+* {
+	margin: 0;
+}
+/*
+3. Allow percentage-based heights in the application
+*/
+html,
+body {
+	height: 100%;
+	font-family: "Roboto", sans-serif;
+}
+/*
+Typographic tweaks!
+4. Add accessible line-height
+5. Improve text rendering
+*/
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+/*
+6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+/*
+7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+/*
+8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+/*
+9. Create a root stacking context
+*/
+#root,
+#__next {
+	isolation: isolate;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background: var(--main-bg-color);
+}
+
+.card {
+	display: flex;
+	overflow: hidden;
+	border-radius: 10px;
+	aspect-ratio: 16/7;
+	margin: auto;
+	background: var(--main-card-color);
+}
+
+.innerCard {
+	width: 50%;
+	padding: 4rem;
+}
+
+.mainText {
+	color: var(--secondary-font-color);
+	margin-block: 1rem 3rem;
+	font-size: small;
+}
+
+.imagen {
+	width: 50%;
+	background-image: url("../images/image-header-desktop.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.imagen2 {
+	display: none;
+}
+
+.overlay {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(100, 52, 129, 0.6);
+	filter: contrast(150%);
+}
+h1 {
+	color: var(--main-font-color);
+	font-size: 1.75rem;
+}
+
+.data {
+	display: flex;
+	justify-content: space-between;
+	color: var(--main-font-color);
+}
+
+.counter {
+	font-size: 1.25rem;
+}
+
+.desc {
+	font-size: 0.7rem;
+	color: var(--secondary-font-color);
+}
+
+@media (max-width: 900px) {
+	.card {
+		height: 80%;
+		flex-direction: column;
+		aspect-ratio: 6/16;
+		margin: auto;
+	}
+
+	.innerCard {
+		width: 100%;
+
+		padding: 2rem;
+	}
+	.imagen2 {
+		display: block;
+		height: 35%;
+		background-image: url("../images/image-header-mobile.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	.imagen {
+		display: none;
+	}
+
+	h1 {
+		text-align: center;
+		color: var(--main-font-color);
+		font-size: 1.55rem;
+	}
+
+	.data {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+		gap: 1.5rem;
+		justify-content: space-between;
+		color: var(--main-font-color);
+	}
+
+	.mainText {
+		text-align: center;
+		font-size: 0.85rem;
+	}
+}
