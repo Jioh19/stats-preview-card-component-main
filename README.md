@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Jioh19/stats-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://github.com/Jioh19/stats-preview-card-component-main/deployments/github-pages)
+- Solution URL: [Github](https://github.com/Jioh19/stats-preview-card-component-main)
+- Live Site URL: [Github Pages](https://github.com/Jioh19/stats-preview-card-component-main/deployments/github-pages)
 
 ## My process
 
